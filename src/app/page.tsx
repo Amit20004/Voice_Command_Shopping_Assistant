@@ -44,18 +44,20 @@ export default function Home() {
   const handleCommand = (data: CommandData) => {
     if (!data?.action) return;
 
-    if (data.action === "add" && data.name) {
-      const category = categorizeItem(data.name);
+   if (data.action === "add" && data.name) {
+  const itemName: string = data.name;
+  const category = categorizeItem(itemName);
 
-      setItems(prev => [
-        ...prev,
-        {
-          name: data.name,
-          quantity: data.quantity || 1,
-          category,
-        },
-      ]);
-    }
+  setItems(prev => [
+    ...prev,
+    {
+      name: itemName,
+      quantity: data.quantity || 1,
+      category,
+    },
+  ]);
+}
+
 
     if (data.action === "remove" && data.name) {
       setItems(prev => prev.filter(i => i.name !== data.name));
