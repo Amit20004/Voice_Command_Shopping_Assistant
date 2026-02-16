@@ -1,36 +1,9 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project is a Voice-Based Shopping Assistant built using Next.js (frontend), Node.js + Express (backend), and MongoDB (database). The main goal was to allow users to manage a shopping list using voice commands instead of typing.
 
-## Getting Started
+I used the Web Speech API for speech recognition. When the user clicks the microphone button, the app listens to their voice and converts speech into text. Then I process the text to detect actions like add, remove, update, or remove all. I also added support for both English and Hindi commands.
 
-First, run the development server:
+The frontend is built with Next.js and Tailwind CSS for a clean and responsive UI. Axios is used to send API requests to the backend. The backend handles routes like adding items, removing items, and clearing the list. MongoDB stores all items with fields like name, quantity, and category.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I also added toast notifications for better user feedback and improved the UI for mobile users.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project helped me understand full-stack development, API handling, speech recognition, and state management.
