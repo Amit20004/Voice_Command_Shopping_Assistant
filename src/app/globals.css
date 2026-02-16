@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
+  font-family: system-ui, sans-serif;
+}
+
+.section-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.category-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #6b7280;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
