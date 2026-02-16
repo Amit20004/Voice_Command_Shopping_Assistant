@@ -70,7 +70,7 @@ const VoiceButton = ({ onCommand }: VoiceButtonProps) => {
       toast.error("Couldn't hear that. Try again.");
     };
 
-   recognition.onresult = (event) => {
+   recognition.onresult = (event:any ) => {
   const transcript = event.results?.[0]?.[0]?.transcript;
 
   if (!transcript) {
